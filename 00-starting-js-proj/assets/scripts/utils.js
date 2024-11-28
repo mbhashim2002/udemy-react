@@ -1,1 +1,0 @@
-export const str = 'this string is exported from utils.js!!!';
