@@ -11,12 +11,28 @@
 // console.log(`=== comparison: ${1 === 1}`);
 // console.log(`Other bool operators: < > <= >=`);
 
-function greet(name = "Car", msg = "Meow") {
-    console.log(`Hello ${name}. ${msg}.`);
-    return `This is a message by the anti-${name} movement.`
+// function greet(name = "Car", msg = "Meow") {
+//     console.log(`Hello ${name}. ${msg}.`);
+//     return `This is a message by the anti-${name} movement.`
+// }
+
+// greet();
+// greet("Jane", "Big chungus");
+// greet("Buh", "Guh");
+// console.log(greet())
+
+const anonymous_func = function() {
+    console.log('Anonymous function with function keyword');
 }
 
-greet();
-greet("Jane", "Big chungus");
-greet("Buh", "Guh");
-console.log(greet())
+const anonymous_func2 = () => {
+    console.log('Arrow function')
+}
+
+// export default function() {
+//     console.lo('Exporting default anonymous function')
+// }
+
+export default (x) => {
+    return x*x;
+}
