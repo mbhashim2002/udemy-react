@@ -37,27 +37,47 @@
 //     return x*x;
 // }
 
-const user = {
-    name: "Magnus the Red",
-    age: 12,
-    greet() {
-        console.log(`Hello ${this.name}`);
-    }
-};
+// const user = {
+//     name: "Magnus the Red",
+//     age: 12,
+//     greet() {
+//         console.log(`Hello ${this.name}`);
+//     }
+// };
 
-console.log(user.name);
-user.greet();
+// console.log(user.name);
+// user.greet();
 
-class User {
-    constructor(name, age){
-        this.name = name;
-        this.age = age;
-    }
-    greet(){
-        console.log(`Hii you are ${this.age} years old!`);
-    }
-}
+// class User {
+//     constructor(name, age){
+//         this.name = name;
+//         this.age = age;
+//     }
+//     greet(){
+//         console.log(`Hii you are ${this.age} years old!`);
+//     }
+// }
 
-const user1 = new User("Guh", 142);
-console.log(user1);
-user1.greet();
+// const user1 = new User("Guh", 142);
+// console.log(user1);
+// user1.greet();
+
+const hobbies = ["Sports", "Cooking", "Reading"];
+console.log(hobbies[0]);
+
+hobbies.push("Working");
+console.log(hobbies);
+
+const index = hobbies.findIndex(item => item === "Cooking");
+
+const index2 = hobbies.findIndex((item) => {
+    return item === "Cooking";
+})
+
+console.log(index);
+console.log(index2);
+
+//have to put object in () because otherwise the curly brackets will be interprested as function definers
+const editedHobbies = hobbies.map(item => ({text: item}));
+
+console.log(editedHobbies);
