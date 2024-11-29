@@ -21,18 +21,43 @@
 // greet("Buh", "Guh");
 // console.log(greet())
 
-const anonymous_func = function() {
-    console.log('Anonymous function with function keyword');
-}
-
-const anonymous_func2 = () => {
-    console.log('Arrow function')
-}
-
-// export default function() {
-//     console.lo('Exporting default anonymous function')
+// const anonymous_func = function() {
+//     console.log('Anonymous function with function keyword');
 // }
 
-export default (x) => {
-    return x*x;
+// const anonymous_func2 = () => {
+//     console.log('Arrow function')
+// }
+
+// // export default function() {
+// //     console.lo('Exporting default anonymous function')
+// // }
+
+// export default (x) => {
+//     return x*x;
+// }
+
+const user = {
+    name: "Magnus the Red",
+    age: 12,
+    greet() {
+        console.log(`Hello ${this.name}`);
+    }
+};
+
+console.log(user.name);
+user.greet();
+
+class User {
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    greet(){
+        console.log(`Hii you are ${this.age} years old!`);
+    }
 }
+
+const user1 = new User("Guh", 142);
+console.log(user1);
+user1.greet();
