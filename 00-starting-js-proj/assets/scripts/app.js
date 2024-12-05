@@ -110,20 +110,38 @@
 
 // storeOrder({id: 5, currency: 'USD', amount: 15.99});
 
-const hobbies = ['Sports', 'Cooking'];
-const user = {
-    name: 'Max',
-    age: 34
-};
+// const hobbies = ['Sports', 'Cooking'];
+// const user = {
+//     name: 'Max',
+//     age: 34
+// };
 
-const newHobbies = ['Reading'];
+// const newHobbies = ['Reading'];
 
-const mergedHobbies = [...hobbies, ...newHobbies];
-console.log(mergedHobbies);
+// const mergedHobbies = [...hobbies, ...newHobbies];
+// console.log(mergedHobbies);
 
-const extendedUser = {
-    isAdmin: true,
-    ...user
+// const extendedUser = {
+//     isAdmin: true,
+//     ...user
+// }
+
+// console.log(extendedUser);
+
+const pwd = prompt('Um uhhh just put it in nerd');
+
+if(pwd === 'abc123'){
+    console.log('Bruhhhh no way haha bruhhhhhhhhhhh');
+}else if(2===1){
+    console.log('ermm....impossibru');
+}else{
+    console.log('Oh hell no!');
 }
 
-console.log(extendedUser);
+const hobbies = ['Being so cool', 'idk'];
+
+for(const hobby of hobbies){
+    console.log(hobby);
+}
+
+hobbies.forEach(hobby => console.log(`${hobby}!!!`));
