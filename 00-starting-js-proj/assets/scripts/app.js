@@ -128,20 +128,23 @@
 
 // console.log(extendedUser);
 
-const pwd = prompt('Um uhhh just put it in nerd');
+// const pwd = prompt('Um uhhh just put it in nerd');
 
-if(pwd === 'abc123'){
-    console.log('Bruhhhh no way haha bruhhhhhhhhhhh');
-}else if(2===1){
-    console.log('ermm....impossibru');
-}else{
-    console.log('Oh hell no!');
-}
+// if(pwd === 'abc123'){
+//     console.log('Bruhhhh no way haha bruhhhhhhhhhhh');
+// }else if(2===1){
+//     console.log('ermm....impossibru');
+// }else{
+//     console.log('Oh hell no!');
+// }
 
-const hobbies = ['Being so cool', 'idk'];
+// const hobbies = ['Being so cool', 'idk'];
 
-for(const hobby of hobbies){
-    console.log(hobby);
-}
+// for(const hobby of hobbies){
+//     console.log(hobby);
+// }
 
-hobbies.forEach(hobby => console.log(`${hobby}!!!`));
+// hobbies.forEach(hobby => console.log(`${hobby}!!!`));
+
+const list = document.querySelector('ul');
+list.remove();
