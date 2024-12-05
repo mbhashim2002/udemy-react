@@ -149,25 +149,35 @@
 // const list = document.querySelector('ul');
 // list.remove();
 
-const someStr = prompt('Type something nerd');
+// const someStr = prompt('Type something nerd');
 
-function printSmth(someStr){
-    console.log(someStr);
+// function printSmth(someStr){
+//     console.log(someStr);
+// }
+
+// const printSmth2 = someStr => `${someStr} is what a nerd would type`;
+
+// function printSmth3(){
+//     console.log('Ermmmm....no parameters??!?!1!');
+// }
+
+// function printSmth4(foo){
+//     foo();
+// }
+
+// // setInterval(() => {console.log(printSmth2(someStr))},1000);
+// // setInterval(() => {printSmth('The return of return')},1000);
+
+// setTimeout(printSmth3,5000);
+// setTimeout(printSmth3(), 1000);
+// setTimeout(() => {printSmth4(() => {console.log('The Chungus rages through the function call stack.')})},6000);
+
+function init() {
+    function greet(){
+        console.log('Hi!');
+    }
+
+    greet();
 }
 
-const printSmth2 = someStr => `${someStr} is what a nerd would type`;
-
-function printSmth3(){
-    console.log('Ermmmm....no parameters??!?!1!');
-}
-
-function printSmth4(foo){
-    foo();
-}
-
-// setInterval(() => {console.log(printSmth2(someStr))},1000);
-// setInterval(() => {printSmth('The return of return')},1000);
-
-setTimeout(printSmth3,5000);
-setTimeout(printSmth3(), 1000);
-setTimeout(() => {printSmth4(() => {console.log('The Chungus rages through the function call stack.')})},6000);
+init();
