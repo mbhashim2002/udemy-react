@@ -172,12 +172,23 @@
 // setTimeout(printSmth3(), 1000);
 // setTimeout(() => {printSmth4(() => {console.log('The Chungus rages through the function call stack.')})},6000);
 
-function init() {
-    function greet(){
-        console.log('Hi!');
-    }
+// function init() {
+//     function greet(){
+//         console.log('Hi!');
+//     }
 
-    greet();
-}
+//     greet();
+// }
 
-init();
+// init();
+
+let userMessage = 'Hello!'
+userMessage = userMessage.concat('!!!!');
+console.log(userMessage);
+
+const hobbies = ['Sports', 'Cooking'];
+hobbies.push('Big climbing');
+console.log(hobbies);
+
+// const means that you cannot change to refer to another object, but the current object being pointed to can still be changed
+// const and immutable are different things
